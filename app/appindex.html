@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zamangar | زمانگر</title>
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="stylesheet" href="/app/appstyle.css">
+</head>
+
+<body>
+  <section class="entire-body">
+    <div class="topic">
+      <h1> زمانگر</h1>
+    </div>
+
+    <nav class="navbar">
+
+      <div class="modes">
+        <button class="mode" id="cornoButton">
+          <h2>کرنومتر</h2>
+        </button>
+        <button class="mode" id="timerButton">
+          <h2>تایمر</h2>
+        </button>
+        <button class="mode" id="alarmButton">
+          <h2>آلارم</h2>
+        </button>
+      </div>
+    </nav>
+
+
+
+    <section class="app-body">
+      <div class="app-body-2">
+        <!-----------CORNO-------------->
+        <section class=" app corno-section" id="cornoSection">
+
+
+
+          <div class="analog-clock">
+            <div id="time">
+
+              <div class="circle" style="--clr:#ff2972">
+                <div class="dots sec_dot"></div>
+                <svg>
+                  <circle cx="120" cy="120" r="120" id="ss"></circle>
+                </svg>
+              </div>
+              <div class="circle" style="--clr:#fee800">
+                <div class="dots min_dot"></div>
+                <svg>
+                  <circle cx="100" cy="100" r="100" id="mm"></circle>
+                </svg>
+              </div>
+              <div class="circle" style="--clr:#04fc43">
+                <div class="dots hr_dot"></div>
+                <svg>
+                  <circle cx="80" cy="80" r="80" id="hh"></circle>
+                </svg>
+              </div>
+              <div class="clock" id="cornometer">00:00:00</div>
+            </div>
+          </div>
+
+          <div class="cornoButtons">
+
+
+              <button id="stopButton" disabled><img src="/node_modules/bootstrap-icons/icons/pause-fill.svg"
+                  alt=""></button>            <button id="startButton"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt=""></button><button id="resumeButton" style="display: none;"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt="" ></button>
+              <button id="resetButton" disabled><img
+                  src="/node_modules/bootstrap-icons/icons/arrow-counterclockwise.svg" alt=""></button>
+
+          </div>
+
+
+
+
+        </section>
+        <!-----------CORNO-------------->
+        <!-----------TIMER-------------->
+        <section class="app timer-section" id="timerSection">
+
+          <div class="analog-clock">
+            <div id="time">
+
+              <div class="circle" style="--clr:#ff2972">
+                <div class="dots sec_dot"></div>
+                <svg>
+                  <circle cx="120" cy="120" r="120" id="ss-timer"></circle>
+                </svg>
+              </div>
+              <div class="circle" style="--clr:#fee800">
+                <div class="dots min_dot"></div>
+                <svg>
+                  <circle cx="100" cy="100" r="100" id="mm-timer"></circle>
+                </svg>
+              </div>
+              <div class="circle" style="--clr:#04fc43">
+                <div class="dots hr_dot"></div>
+                <svg>
+                  <circle cx="80" cy="80" r="80" id="hh-timer"></circle>
+                </svg>
+              </div>
+              <div class="clock" id="countdownDisplay">00:00:00:00
+
+              </div>
+            </div>
+          </div>
+                          <div class="inputs">
+                            <span class="timer-input">
+                          
+                              <input type="number" id="minutesInput" min="0" max="60" required>
+                              <p>دقیقه</p>
+                            </span>
+                            <span class="timer-input">
+                          
+                              <input type="number" id="secondsInput" min="0" max="60" required>
+                              <p>ثانیه</p>
+                            </span>
+                          </div>
+                          
+
+
+          <div class="timer-buttons">
+            <button id="stopButton1" disabled><img src="/node_modules/bootstrap-icons/icons/pause-fill.svg"
+                alt=""></button><button id="startButton1"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt=""></button>
+            <button id="resetButton1" disabled><img src="/node_modules/bootstrap-icons/icons/arrow-counterclockwise.svg"
+                alt=""></button>
+          </div>
+          <audio style="display: none;" id="alarmSound1" src="alarm_sound.mp3" controls></audio>
+
+        </section>
+        <!-----------TIMER-------------->
+        <!-----------ALARM-------------->
+        <section class="app alarm-section" id="alarmSection">
+          <div class="analog-clock">
+            <div id="time">
+          
+              <div class="circle" style="--clr:#ff2972">
+                <div class="dots sec_dot"></div>
+                <svg>
+                  <circle cx="120" cy="120" r="120" id="ss-timer"></circle>
+                </svg>
+              </div>
+              <div class="circle" style="--clr:#fee800">
+                <div class="dots min_dot"></div>
+                <svg>
+                  <circle cx="100" cy="100" r="100" id="mm-timer"></circle>
+                </svg>
+              </div>
+              <div class="circle" style="--clr:#04fc43">
+                <div class="dots hr_dot"></div>
+                <svg>
+                  <circle cx="80" cy="80" r="80" id="hh-timer"></circle>
+                </svg>
+              </div>
+          <div class="clock" id="clock">00:00:00</div>
+            </div>
+          </div>
+
+          <h3 >تنظیم آلارم</h3>
+          <div class="alarm-selection">
+            <select id="hour"></select>
+            <select id="minute"></select>
+            <select id="ampm">
+              <option value="AM">ق.ظ</option>
+              <option value="PM">ب.ظ</option>
+            </select>
+          </div>
+          <button id="setAlarmButton">تنظیم آلارم</button>
+          <audio style="display: none;" id="alarmSound" src="/source/mixkit-warning-alarm-buzzer-991.ogg"
+            controls></audio>
+        </section>
+        <!-----------ALARM-------------->
+
+    </section>
+    <section class="footer"></section>
+  </section>
+
+
+  </div>
+  <script src="/app/app.js"></script>
+</body>
+
+</html>

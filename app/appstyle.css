@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+ font-family: 'ojan';
+ font-weight: 100;
+ src: url(/fonts/alfont_com_خط-فارسي-اوجان-حدود.ttf);}
+
+:root {
+  --darkPurple: #31203C;
+  --xanthous: #FFC551;
+  --rose : #F42B78;
+  --veronica : #944CE2;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+   font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  overflow-y: hidden;
+ overflow-x: hidden;
+}
+.entire-body {
+     font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+ height: 100vh;
+ width: 100vw;
+ display: grid;
+ grid-template-rows: 10% 13% 75% 5%;
+ justify-content: center;
+ overflow-x: hidden;
+ overflow-y: hidden;
+ }
+ .topic {
+  font-family: ojan;
+  font-size: 40px;
+  
+  background-color: #1F002D;
+  width: 100vw;
+  text-align: center;
+  grid-row: 1/2;
+ }
+ .topic h1 {
+  color: white; margin-top: ;
+ }
+.navbar {
+  
+    background: url(/source/blurry-gradient-haikei\ \(2\).svg);
+      background-size: cover;
+  height: 100%;
+  width: 100vw;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ grid-row: 2/3;
+}
+.navbar button {
+  color: white;
+  margin-inline: 6vw ;
+  background: none;
+  border: none;
+  padding: 1rem;
+     font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 15px;
+  font-style: normal;
+}
+.app-body {
+
+  background: url(/source/blurry-gradient-haikei\ \(2\).svg);
+  background-size: cover;
+  height:100%;
+  width: 100vw;
+
+ grid-row: 3/4;
+}
+.app {
+  margin-top: 5rem;
+}
+
+.modes {
+ display: flex;
+ justify-content: space-between;
+}
+.mode {
+ width: 100px;
+
+}
+.corno-section {
+  
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 50px;
+}
+.cornoButtons {
+  margin-top: -1rem;
+  display: flex;
+   
+  justify-content: center;
+  gap: 20px;
+
+  align-items: center;
+}
+.cornoButtons button {
+  color: var(--darkPurple);
+     font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+#startButton{
+width: 80px;
+height: 80px;
+background-color: #46C54E;
+font-size: 22px;
+border: solid none 2px;
+border-radius: 50%;
+box-shadow: 2px 2px 20px;
+}
+#startButton img {
+  scale: 2;
+  filter: invert();
+  stroke: black;
+  
+}
+#resumeButton {
+  width: 80px;
+height: 80px;
+background-color: #4692c5;
+font-size: 22px;
+border: solid none 2px;
+border-radius: 50%;
+box-shadow: 2px 2px 20px;
+}
+#resumeButton img {
+  scale: 2;
+  filter: invert();
+  stroke: black;
+  
+}
+#startButton:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#resumeButton:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#stopButton:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#resetButton:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#resetButton{
+width: 130px;
+height: 50px;
+font-size: 18px;
+background-color: var(--xanthous);
+border: solid none 2px;
+border-radius: 200px;
+box-shadow: 2px 2px 20px;
+
+}
+#stopButton{
+  background-color: #F42B78;
+width: 130px;
+height: 50px;
+font-size: 18px;
+border-radius: 200px;
+box-shadow: 2px 2px 20px;
+border: solid none 2px;
+}
+#stopButton img {
+
+  scale: 2;
+  filter: invert(1);
+}
+ #resetButton img {
+  scale: 2;
+  filter: invert(1);
+ }
+.clock {
+  color: white;
+  font-size: 20px;
+}
+
+.timer-section {
+  
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+
+#startButton1 {
+width: 80px;
+height: 80px;
+background-color: #46C54E;
+font-size: 22px;
+border: solid none 2px;
+border-radius: 50%;
+box-shadow: 2px 2px 20px;
+  margin-inline: 25px;
+}
+#startButton1 img {
+  scale: 2;
+  filter: invert();
+  stroke: black;
+
+  
+}
+.alarm-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alarm-section h3{
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+.alarm-selection select {
+  padding: 1rem;
+  margin-inline: 0.5rem ;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+       font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.alarm-section button {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 18px;
+ border: none ;
+ border-radius: 40px;
+ width: 200px;
+ background: #46C54E
+;
+color: white;
+}
+#stopButton1 {
+  background-color: #F42B78;
+width: 130px;
+height: 50px;
+font-size: 18px;
+border-radius: 200px;
+box-shadow: 2px 2px 20px;
+border: solid none 2px;
+}
+#stopButton1 img {
+
+  scale: 2;
+  filter: invert(1);
+}
+#resetButton1:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#startButton1:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#stopButton1:disabled {
+
+background-color: rgb(105, 105, 105);
+
+}
+#resetButton1{
+width: 130px;
+height: 50px;
+
+font-size: 18px;
+background-color: var(--xanthous);
+border: solid none 2px;
+border-radius: 200px;
+box-shadow: 2px 2px 20px;
+
+}
+ #resetButton1 img {
+  scale: 2;
+  filter: invert(1);
+ }
+.inputs {
+  display: flex;
+  gap: 15px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.inputs p {
+  margin-top: 5px;
+}
+#minutesInput {
+  height: 28px;
+  width: 80px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+
+}
+#secondsInput {
+  font-size: 16px;
+  height: 28px;
+  width: 80px;
+  border: none;
+  border-radius: 10px;
+}
+.timer-input p {
+ font-size: 15px;
+}
+#countdownDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.analog-clock {
+position: relative;
+width: 280px;
+height: 280px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+box-shadow: inset 5px 5px 25px rgba(0, 0, 0,25 );
+border-radius: 50%;
+}
+#time {
+ position: relative;
+ width: 250px;
+height: 250px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#time .circle {
+
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#time .circle svg {
+ position: relative;
+
+}
+
+#time .circle:nth-child(1) svg{
+
+width: 250px;
+height: 250px;
+}
+#time .circle:nth-child(2) svg{
+width: 210px;
+height: 210px;
+}
+#time .circle:nth-child(3) svg{
+width: 170px;
+height: 170px;
+}
+#time .circle svg circle {
+ width: 100%;
+ height: 100%;
+fill: transparent;
+stroke-width: 5 ;
+stroke: var(--clr);
+transform: translate(5px, 5px);
+
+}
+#time .circle:nth-child(1) svg circle 
+{
+ stroke-dasharray: 760 ;
+ stroke-dashoffset: 760 ;
+}
+#time .circle:nth-child(2) svg circle 
+{
+ stroke-dasharray: 630 ;
+ stroke-dashoffset: 630 ;
+}
+#time .circle:nth-child(3) svg circle 
+{
+ stroke-dasharray: 510 ;
+ stroke-dashoffset: 510 ;
+}
+#hh {
+  transition: 1s ease;
+  border-radius: 10%;
+}
+#hh-timer {
+  transition: 1s ease;
+  border-radius: 10%;
+}
+#mm-timer {
+  transition: 1s;
+}
+#mm {
+  transition: 1s;
+}
+#ss {
+transition: 1s ;
+}
+#ss-timer {
+transition: 1s ;
+}
+.footer {
+  background-color: rgb(41, 41, 41);
+  width: 100vw;
+  height: 100%;
+  grid-row: 4/5
+}
