@@ -227,7 +227,7 @@ background-color: #46C54E;
 font-size: 22px;
 border: solid none 2px;
 border-radius: 50%;
-box-shadow: 2px 2px 20px;
+box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.568);
   margin-inline: 25px;
 }
 #startButton1 img {
@@ -327,6 +327,9 @@ box-shadow: 2px 2px 20px;
 }
 .inputs p {
   margin-top: 5px;
+}
+#setAlarmButton {
+  margin-bottom: 2rem;
 }
 #minutesInput {
   height: 28px;
