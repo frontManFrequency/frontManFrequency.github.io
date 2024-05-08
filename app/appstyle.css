@@ -32,8 +32,8 @@ body {
   font-style: normal;
  height: auto;
  width: 100vw;
- display: grid;
- grid-template-rows: 10% 13% 75% 5%;
+ display: flex;
+ flex-direction: column;
  justify-content: center;
  overflow-x: hidden;
  overflow-y: scroll;
