@@ -440,3 +440,15 @@ transition: 1s ;
   height: 100%;
   grid-row: 4/5
 }
+@media screen and (max-width: 768px) {
+  .navbar .modes {
+    scale:0.8
+  }
+.analog-clock {
+  scale: 0.7  ;
+}
+.cornoButtons {
+  scale: 0.7;
+  margin-top: -10vh;
+}
+}
