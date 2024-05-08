@@ -12,10 +12,7 @@
 <body>
   <section class="entire-body">
     <div class="topic">
-      <h1> زمانگر</h1>
-    </div>
-
-    <nav class="navbar">
+      <h1> زمانگر</h1>    <nav class="navbar">
 
       <div class="modes">
         <button class="mode" id="cornoButton">
@@ -30,8 +27,11 @@
       </div>
     </nav>
 
+    </div>
 
 
+
+<section class="body-ft">
     <section class="app-body">
       <div class="app-body-2">
         <!-----------CORNO-------------->
@@ -67,10 +67,12 @@
           <div class="cornoButtons">
 
 
-              <button id="stopButton" disabled><img src="/node_modules/bootstrap-icons/icons/pause-fill.svg"
-                  alt=""></button>            <button id="startButton"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt=""></button><button id="resumeButton" style="display: none;"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt="" ></button>
-              <button id="resetButton" disabled><img
-                  src="/node_modules/bootstrap-icons/icons/arrow-counterclockwise.svg" alt=""></button>
+            <button id="stopButton" disabled><img src="/node_modules/bootstrap-icons/icons/pause-fill.svg"
+                alt=""></button> <button id="startButton"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg"
+                alt=""></button><button id="resumeButton" style="display: none;"><img
+                src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt=""></button>
+            <button id="resetButton" disabled><img src="/node_modules/bootstrap-icons/icons/arrow-counterclockwise.svg"
+                alt=""></button>
 
           </div>
 
@@ -108,24 +110,25 @@
               </div>
             </div>
           </div>
-                          <div class="inputs">
-                            <span class="timer-input">
-                          
-                              <input type="number" id="minutesInput" min="0" max="60" required>
-                              <p>دقیقه</p>
-                            </span>
-                            <span class="timer-input">
-                          
-                              <input type="number" id="secondsInput" min="0" max="60" required>
-                              <p>ثانیه</p>
-                            </span>
-                          </div>
-                          
+          <div class="inputs">
+            <span class="timer-input">
+
+              <input type="number" id="minutesInput" min="0" max="60" required>
+              <p>دقیقه</p>
+            </span>
+            <span class="timer-input">
+
+              <input type="number" id="secondsInput" min="0" max="60" required>
+              <p>ثانیه</p>
+            </span>
+          </div>
+
 
 
           <div class="timer-buttons">
             <button id="stopButton1" disabled><img src="/node_modules/bootstrap-icons/icons/pause-fill.svg"
-                alt=""></button><button id="startButton1"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg" alt=""></button>
+                alt=""></button><button id="startButton1"><img src="/node_modules/bootstrap-icons/icons/play-fill.svg"
+                alt=""></button>
             <button id="resetButton1" disabled><img src="/node_modules/bootstrap-icons/icons/arrow-counterclockwise.svg"
                 alt=""></button>
           </div>
@@ -137,7 +140,7 @@
         <section class="app alarm-section" id="alarmSection">
           <div class="analog-clock">
             <div id="time">
-          
+
               <div class="circle" style="--clr:#ff2972">
                 <div class="dots sec_dot"></div>
                 <svg>
@@ -156,11 +159,11 @@
                   <circle cx="80" cy="80" r="80" id="hh-timer"></circle>
                 </svg>
               </div>
-          <div class="clock" id="clock">00:00:00</div>
+              <div class="clock" id="clock">00:00:00</div>
             </div>
           </div>
 
-          <h3 >تنظیم آلارم</h3>
+          <h3>تنظیم آلارم</h3>
           <div class="alarm-selection">
             <select id="hour"></select>
             <select id="minute"></select>
@@ -178,7 +181,7 @@
     </section>
     <section class="footer"></section>
   </section>
-
+</section>
 
   </div>
   <script src="/app/app.js"></script>
