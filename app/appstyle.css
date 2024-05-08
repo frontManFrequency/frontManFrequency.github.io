@@ -22,7 +22,7 @@ body {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  overflow-y: hidden;
+  overflow-y: scroll;
  overflow-x: hidden;
 }
 .entire-body {
@@ -30,7 +30,7 @@ body {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
- height: 100vh;
+ height: auto;
  width: 100vw;
  display: grid;
  grid-template-rows: 10% 13% 75% 5%;
