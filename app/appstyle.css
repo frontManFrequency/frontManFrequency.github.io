@@ -36,7 +36,7 @@ body {
  grid-template-rows: 10% 13% 75% 5%;
  justify-content: center;
  overflow-x: hidden;
- overflow-y: hidden;
+ overflow-y: scroll;
  }
  .topic {
   font-family: ojan;
