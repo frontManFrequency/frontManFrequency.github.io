@@ -55,6 +55,7 @@ h1{
   right:4vw;
 }
 .hero {
+  margin-top: -100px ;
   z-index: 10;
 color: white;
  text-align: center;
