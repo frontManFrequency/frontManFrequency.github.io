@@ -457,3 +457,9 @@ transition: 1s ;
   margin-top: -10vh;
 }
 }
+@media screen and (max-width: 400px) {
+.analog-clock {
+  scale: 0.7  ;
+  margin-top: -15vh;
+}
+}
